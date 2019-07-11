@@ -2,68 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="script" href="js/bootstrap.min.js">
-     <style>
-       #hi{
-           height: 6em; 
-        background: rgb(76, 255, 171);
-        border-radius: 4em; 
-        border: 1em solid white;
-        margin: 2em solid black;
-       }
-       #hi1{
-        height: 4em;
-        background: rgb(76, 255, 171);
-        border-radius: 4em;
-        margin: 2em solid black;
-       }
-       #hi2{
-        height: 4em;
-        background: rgb(76, 255, 171);
-        }
-        #hi3{
-            height: 4em;
-            background: rgb(76, 255, 171);
-            border-radius: 4em;
-        }
-         #hi22{
-        height: 1.3em;
-        background: rgb(76, 255, 171);
-        }
-     </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .row{
+    background: lightgreen;
+}
+#aside{
+    border: 2px solid black;
+}
+#header{
+    border: 2px solid black;
+}
+#section{
+    height: 5em;
+    padding: 5em 0em 0em 0em;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+#section1{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+#blanco{
+    background: white;
+    height: 3em;
+    
+}
+p{
+    text-align: center;
+    padding-top: 1em;
+}
+</style>
 </head>
 <body>
     <div class="container">
-        <div id="hi" class="row">
-            <div id="color" class="col-md-12">header</div>
+        <div class="row">
+            <div class="col-md-12" id="header">
+                <p>Header</p>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-2" id="aside">
+                <p>Aside</p>
+            </div>
+            <div class="col-md-8" id="section">
+                <p>Section</p>
+            </div>
+            <div class="col-md-2" id="aside">
+                <p>Aside</p>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-2" id="aside">
+                    <p>Aside</p>
+                </div>
+                <div class="col-md-8" id="section">
+                </div>
+                <div class="col-md-2" id="aside">
+                    <p>Aside</p>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" id="blanco">
 
-        <div class="row">
-           <div id="hi1" class="col-md-2">aside</div>
-           <div id="hi2" class="col-md-8">section</div>
-           <div id="hi3" class="col-md-2">aside</div>
+            </div>
+            <div class="col-md-8" id="section1">
+                <p></p>
+            </div>
+            <div class="col-md-2" id="blanco">
+
+            </div>
         </div>
-        <div class="row">
-          <div id="hi1" class="col-md-2">aside</div>
-          <div id="hi2" class="col-md-8"></div>
-          <div id="hi3" class="col-md-2">aside</div>
-         </div>
-         <div class="row">
-                <div class="col-md-2"></div>
-                <div id="hi22" class="col-md-8"></div>
-                <div class="col-md-2"></div>
-         </div>
-         <div id="hi" class="row">
-                <div id="color" class="col-md-12">header</div>
+        <div class="row" id="aside">
+            <div class="col-md-12">
+                <p>Footer</p>
+            </div>
         </div>
 
     </div>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
